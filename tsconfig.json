@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/tsc",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["ESNEXT", "dom"],
+    "downlevelIteration": true,
+    "strict": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "baseUrl": "."
+  },
+  "include": ["./typings/**/*", "./src/**/*"]
+}
