@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "babel": "babel ./src/index.ts -d dist/babel -x \".ts, .tsx\"",
+    "babel": "babel ./src -d dist/babel -x \".ts, .tsx,.d.ts\"",
     "webpack": "webpack",
     "build": "rm -rf dist && npm run tsc && npm run babel && npm run webpack"
   },
