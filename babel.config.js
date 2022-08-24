@@ -1,8 +1,17 @@
 const path = require('path');
 
 module.exports = {
-  presets: ['@babel/preset-env', '@babel/preset-typescript'],
+  presets: [
+    '@babel/preset-env',
+    [
+      '@babel/preset-typescript',
+      // {
+      //   optimizeConstEnums: true,
+      // },
+    ],
+  ],
   plugins: [
+    // ['const-enum', { transform: 'constObject' }],
     // [
     //   'babel-plugin-typescript-const-enum',
     //   {

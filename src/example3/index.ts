@@ -1,4 +1,5 @@
-import { PartialConstEnum, PartialConstNamespace } from './partial';
+// import { PartialConstEnum, PartialConstNamespace } from './partial';
+import { PartialConstEnum, PartialConstNamespace } from './partial.d';
 
 const a = PartialConstEnum.A;
 const b = PartialConstEnum.B;

@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const exampleList = fs.readdirSync(path.resolve(__dirname, 'src'));
 
@@ -16,7 +17,7 @@ module.exports = (env, argv) => {
       filename: '[name]/index.js',
       path: path.resolve(__dirname, 'dist/webpack'),
     },
-    resolve: { extensions: ['.ts', '.js', '.d.ts'] },
+    resolve: { extensions: ['.ts', '.js'] },
     module: {
       rules: [
         {
@@ -24,6 +25,10 @@ module.exports = (env, argv) => {
           use: ['babel-loader'],
         },
       ],
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [new TerserPlugin()],
     },
   };
 };
