@@ -9,7 +9,7 @@
     "noEmitOnError": true,
     "removeComments": false,
     // "isolatedModules": true,
-    "preserveConstEnums": true,
+    // "preserveConstEnums": true,
     "baseUrl": "."
   },
   "include": ["./typings/**/*", "./src/**/*"]

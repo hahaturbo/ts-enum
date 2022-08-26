@@ -5,18 +5,18 @@ module.exports = {
     '@babel/preset-env',
     [
       '@babel/preset-typescript',
-      // {
-      //   optimizeConstEnums: true,
-      // },
+      {
+        optimizeConstEnums: true,
+      },
     ],
   ],
   plugins: [
     // ['const-enum', { transform: 'constObject' }],
-    // [
-    //   'babel-plugin-typescript-const-enum',
-    //   {
-    //     enumFile: path.resolve(__dirname, './typings/enums.json'),
-    //   },
-    // ],
+    [
+      'babel-plugin-typescript-const-enum',
+      {
+        enumFile: path.resolve(__dirname, './typings/example6/enums.json'),
+      },
+    ],
   ],
 };

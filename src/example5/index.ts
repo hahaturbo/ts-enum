@@ -1,18 +1,12 @@
 //
-// import { BabelPartialConstEnum, BabelPartialEnum, BabelPartialNamespace, BabelPartialConstNamespace } from './partial';
+import { BabelPartialConstEnum, BabelPartialEnum, BabelPartialNamespace, BabelPartialConstNamespace } from './partial';
 //
-import {
-  BabelPartialConstEnum,
-  BabelPartialEnum,
-  BabelPartialNamespace,
-  BabelPartialConstNamespace,
-} from './partial.d';
-
-const enum Test {
-  A,
-}
-
-const testA = Test.A;
+// import {
+//   BabelPartialConstEnum,
+//   BabelPartialEnum,
+//   BabelPartialNamespace,
+//   BabelPartialConstNamespace,
+// } from './partial.d';
 
 const babelPartialA = BabelPartialEnum.A;
 const babelPartialB = BabelPartialEnum.B;
